@@ -1,2 +1,2 @@
-# Azico-Financial
-Main repo of the website for Azico Financial Services
+# ekdsgn-portfolio
+Main repo of my portfolio
