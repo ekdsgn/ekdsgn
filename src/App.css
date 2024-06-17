@@ -136,7 +136,7 @@ body {
   border-radius: 6px;
   border: none;
   background-color: white;
-
+  cursor: pointer;
   padding: 10px;
 }
 

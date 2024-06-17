@@ -1,6 +1,4 @@
 const Card = ({ index, src }) => {
-
-  console.log(index);
   
   return (
     <div className="proj-card-ctn f-carousel__slide">

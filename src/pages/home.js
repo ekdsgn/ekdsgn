@@ -10,6 +10,10 @@ const Home = () => {
       </div>
 
       <div>
+        
+      </div>
+
+      <div>
         <Projects title="Featured Projects"/>
       </div>
 
