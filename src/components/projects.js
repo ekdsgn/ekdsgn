@@ -2,7 +2,7 @@ import Carousel from "./carousel";
 import Card from "./projectCard";
 import testImg from "../assets/images/test-proj.png"
 
-const Project = () => {
+const Project = ({ title }) => {
 
 
   const cards = 5;
@@ -10,7 +10,7 @@ const Project = () => {
 
   return (
     <div className="proj-ctn">
-      <h3>My Top Projects</h3>
+      <h3>{title}</h3>
 
       <div className="proj-carousel">
 

@@ -178,8 +178,19 @@ body {
 }
 
 .proj-card-ctn{
-  width: 57.5% !important;
-  height: 100%;
+  /* width: 55% !important; */
+}
+
+.f-carousel__slide {
+  width: 70% !important;
+}
+
+.f-carousel {
+  --f-carousel-spacing: 10px !important;
+}
+
+.card {
+  width: 100%;
 }
 
 .proj-card {

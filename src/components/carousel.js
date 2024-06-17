@@ -8,10 +8,6 @@ import '@fancyapps/ui/dist/carousel/carousel.thumbs.css';
 const defaults = {
   Dots: false,
   Navigation: false,
-  slidesPerPage: 2,
-  Thumbs: {
-    type: 'modern',
-  },
 };
 
 function Carousel({ children, options }) {
@@ -20,8 +16,10 @@ function Carousel({ children, options }) {
   useEffect(() => {
     const container = containerRef.current;
     const carouselOptions = {
-     ...defaults,
-     ...options,
+    ...defaults,
+    ...options,
+
+
     };
 
     const instance = new NativeCarousel(container, carouselOptions);

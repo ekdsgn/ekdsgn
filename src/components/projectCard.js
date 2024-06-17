@@ -19,7 +19,6 @@ const Card = ({ index, src }) => {
               </div>
             </div>
           </div>
-
         </div>
   )
 }
