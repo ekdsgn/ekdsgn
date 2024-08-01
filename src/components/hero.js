@@ -1,23 +1,22 @@
 import Header from "./header"
-
+import PCHero from "../PC Components/pcHero"
+import MobileHero from "./Mobile Components/mobileHero"
 
 const Hero = () => {
+
+
   return (
-    <div className="hero-content">
-        <div className="hero-head">
-          <Header />
-        </div>
+    <section data-scroll-section>
 
-
-        <div className="hero-foot">
-          <h2>EKDSGN</h2>
-          <p>Photographer, Graphic Designer, Creative Director</p>
-
-          <div>
-            <button className="hero-btn"><span id="button-txt">Contact Me</span></button>
-          </div>
-        </div>
+      <div className="mView">
+          <MobileHero />
       </div>
+
+      <div className="pView">
+          <PCHero />
+        </div>
+    </section>
+
   )
 }
 

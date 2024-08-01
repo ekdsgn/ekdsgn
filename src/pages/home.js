@@ -1,24 +1,24 @@
 import Hero from "../components/hero";
 import Projects from "../components/projects";
+import About from "../components/about"
+import useLocoScroll from "../hooks/useLocoScroll";
+import Header from "../components/header";
 
 
 const Home = () => {
+
+  useLocoScroll(true);
+
   return (
     <>
-      <div className="hero-ctn">
-        <Hero />
-      </div>
+        <main data-scroll-container className="home">
+          {/* ...your app */}
+          <Header />
+          
+          <Hero />
 
-      <div>
-        <Projects title="Featured Projects"/>
-      </div>
-
-
-      <div>
-        <Projects title="All Projects"/>
-      </div>
-
-      
+          <About />
+        </main>
     </>
 
   )
