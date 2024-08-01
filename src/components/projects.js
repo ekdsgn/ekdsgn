@@ -1,13 +1,14 @@
 import Carousel from "./carousel";
-import Card from "./projectCard";
-import testImg from "../assets/images/test-proj.png"
+import Card from "./card";
 
-const Project = ({ title }) => {
+
+const Project = ({ title, imgSrc }) => {
 
 
   const cards = 5;
-  const projImg = [testImg, testImg, testImg, testImg, testImg];
+  console.log(imgSrc);
 
+  
   return (
     <div className="proj-ctn">
       <h3>{title}</h3>
@@ -15,9 +16,9 @@ const Project = ({ title }) => {
       <div className="proj-carousel">
 
         <Carousel options={{ infinite: false }}>
-        {Array.from({ length: cards }, (_, index) => (
-            <Card key={index} index={index + 1} src={projImg[index]}  />
-          ))}
+        {imgSrc.map((src, index) => (
+          <Card key={index} src={src} index={index + 1}/>
+        ))}
         </Carousel>
 
         
