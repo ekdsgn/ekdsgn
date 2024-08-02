@@ -1,4 +1,33 @@
+.App {
+  text-align: center;
+}
 
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
 
 body {
   background-color: #000000;
@@ -7,40 +36,17 @@ body {
 
 :root {
   --font-segoe: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  --bulma-link-h: 360deg;
-  --bulma-link-s: 95%;
-  --bulma-link-l: 44%;
-}
-:root {
-
 }
 
-
-.dancing-script {
-  font-family: "Dancing Script", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-size: 20px;
-  font-style: normal;
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-.zeyada-regular {
-  font-family: "Zeyada", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  font-style: normal;
-}
-
-section {
-  height: 100vh;
-}
-
-.pView {
-  display: none;
-}
-
-.mView {
-}
 /* HEADER COMPONENT  */
 .nav-bar{
   display: flex;
@@ -89,10 +95,10 @@ section {
 
 
 .hero-ctn {
+  height: 600px;
   width: 100%;
-  height: 100vh;
   position: relative;
-  /* text-align: center; */
+  text-align: center;
 }
 
 .hero-ctn::before {
@@ -100,7 +106,7 @@ section {
   background-image: url('/src/assets/images/test-img.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   position: absolute;
 	left: 0;
 	top: 0;
@@ -112,26 +118,17 @@ section {
 
 }
 
-
 .hero-content {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
   position: relative;
   z-index: 1;
-  min-height: 100%;
+  height: 100%;
 }
 
 .hero-foot {
   margin-bottom: 40px;
-
-}
-
-.hFoot-content {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
 }
 
 .hero-btn {
@@ -139,70 +136,23 @@ section {
   border-radius: 6px;
   border: none;
   background-color: white;
-
-  padding: 10px;
   cursor: pointer;
+  padding: 10px;
 }
 
-.button-txt {
+#button-txt {
   font-weight: 700;
   font-size: 14px;
   font-family: var(--font-segoe);
 }
 
-
-
 /* HERO COMPONENT  */
-/* ABOUT COMPONENT  */
-.about-ctn{
-  padding: 25px;
-  /* background-color: white; */
-  /* color: black; */
 
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-.about-content {
-  text-align: center;
-}
-.about-btn {
-
-  width: 220px;
-  border-radius: 6px;
-  border: none;
-  background-color: black;
-  color: white;
-  padding: 10px;
-  cursor: pointer;
-}
-
-.about_card_ctn {
-  color: black;
-  margin-bottom: 20px;
-}
-
-#about_card{
-  width: inherit;
-  height: 280px;
-  overflow: hidden;
-}
-
-#about_card button {
-  height: inherit;
-  width: 100%;
-}
-
-#about_content_ctn {
-  color: black;
-  
-}
-/* ABOUT COMPONENT  */
 /* PROJECT CONTAINER  */
 
 .proj-ctn {
   /* border-bottom: solid 1px #919191; */
-  margin: 0 auto;
+  margin:0 auto;
   position: relative;
   width: 100%;
   
@@ -224,7 +174,7 @@ section {
 .proj-carousel {
   padding: 20px 0 20px 25px;
   overflow: hidden;
-  width: 80%;
+
 }
 
 .proj-card-ctn{
@@ -232,11 +182,11 @@ section {
 }
 
 .f-carousel__slide {
-  /* width: 100% !important; */
+  width: 70% !important;
 }
 
 .f-carousel {
-  /* --f-carousel-spacing: 10px !important; */
+  --f-carousel-spacing: 10px !important;
 }
 
 .card {
@@ -249,8 +199,8 @@ section {
   margin-bottom: 8px;
   overflow: hidden;
 
-  /* width: 200px; */
-  /* height: 120px; */
+  width: 200px;
+  height: 120px;
 }
 
 .proj-card button {
@@ -266,19 +216,18 @@ section {
 .proj-card button img {
   height: 100%;
   width: 100%;
-  border-radius: 30px;
+  border-radius: 12px;
+
 }
 
 .proj-content {
   display: flex;
   gap: 10px;
-  width: 90%;
-  /* align-items: center; */  
+  width: 100%;
 }
 
 .proj-content-ctn{
   display: inline-block;
-  color: rgba(255,255,255, 0.64)
 }
 
 .proj-num {
@@ -286,19 +235,18 @@ section {
   font-weight: 700;
   letter-spacing: 0;
   line-height: .875;
+
+  color: rgba(255,255,255, 0.64)
 }
 
 .mainT {
-  font-size: 12px;
-  /* font-weight: 600; */
+  margin-top: 1px;
+  font-size: 15px;
+  font-weight: 600;
   letter-spacing: 0;
   line-height: 1.25;
-  display: flex;
-  flex-direction: column;
-  /* list-style-type: disc; */
-  margin-left: 15px;
-  width: 100%;
-  /* justify-content: center; */
+
+  color: rgba(255,255,255, 0.92)
 }
 
 .subT {
@@ -306,14 +254,13 @@ section {
   line-height: 1.23077;
   font-weight: 400;
   letter-spacing: 0;
-  list-style-type: none;
+
+  color: rgba(255,255,255, 0.64)
 }
 
 .proj-data{
   display: flex;
-  gap: 320px;
-  /* justify-content: space-between; */
-  /* flex-direction: column; */
+  flex-direction: column;
 }
 
 /* PROJECT CONTAINER  */
@@ -332,6 +279,3 @@ section {
 .blue {
   color: blue;
 }
-
-
-
