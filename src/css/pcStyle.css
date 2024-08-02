@@ -237,12 +237,15 @@
     width: initial;
     height: initial;
   }
+
   .f-carousel__slide {
-    width: 60% !important;
+    /* width: 60% !important; */
   }
+
   .f-carousel {
     --f-carousel-spacing: 10px !important;
   }
+
   .proj-ctn h3 {
     padding: 20px 0px 0px 25px;
     margin: 0;

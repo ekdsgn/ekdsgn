@@ -224,7 +224,7 @@ section {
 .proj-carousel {
   padding: 20px 0 20px 25px;
   overflow: hidden;
-
+  width: 80%;
 }
 
 .proj-card-ctn{
@@ -232,7 +232,7 @@ section {
 }
 
 .f-carousel__slide {
-  width: 100% !important;
+  /* width: 100% !important; */
 }
 
 .f-carousel {
@@ -266,8 +266,7 @@ section {
 .proj-card button img {
   height: 100%;
   width: 100%;
-  border-radius: 12px;
-
+  border-radius: 30px;
 }
 
 .proj-content {

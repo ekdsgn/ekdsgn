@@ -7,7 +7,7 @@ import '@fancyapps/ui/dist/carousel/carousel.thumbs.css';
 
 const defaults = {
   Dots: false,
-  Navigation: false,
+  // Navigation: false,
 };
 
 function Carousel({ children, options }) {
