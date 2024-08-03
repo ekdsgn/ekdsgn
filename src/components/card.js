@@ -18,7 +18,7 @@ const Card = ({ index, src, mainT, subT }) => {
                   <li>2023 - 2024</li>
                 </span>
                 <span className="subT">
-                  Lorem ipsum odor amet, consectetuer adipiscing elit. Fermentum viverra netus ridiculus cras volutpat vehicula. Massa faucibus vitae ridiculus viverra senectus netus gravida dapibus dolor. Lectus purus etiam sapien odio volutpat euismod torquent.
+                  Lorem ipsum odor amet, consectetuer adipiscing elit. Fermentum viverra netus ridiculus cras volutpat vehicula.
                 </span>
               </div>
             </div>
