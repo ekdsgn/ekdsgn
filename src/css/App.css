@@ -219,12 +219,14 @@ section {
 .proj-ctn h3 {
   padding: 20px 0px 0px 25px;
   margin: 0;
+  text-align: center;
 }
 
 .proj-carousel {
   padding: 20px 0 20px 25px;
   overflow: hidden;
-
+  width: 75%;
+  margin: 0 auto;
 }
 
 .proj-card-ctn{
@@ -232,7 +234,7 @@ section {
 }
 
 .f-carousel__slide {
-  width: 100% !important;
+  /* width: 100% !important; */
 }
 
 .f-carousel {
@@ -266,15 +268,13 @@ section {
 .proj-card button img {
   height: 100%;
   width: 100%;
-  border-radius: 12px;
-
+  border-radius: 30px;
 }
 
 .proj-content {
   display: flex;
   gap: 10px;
-  width: 90%;
-  /* align-items: center; */  
+  align-items: center;  
 }
 
 .proj-content-ctn{
@@ -307,12 +307,13 @@ section {
   line-height: 1.23077;
   font-weight: 400;
   letter-spacing: 0;
+  width: 100%;
   list-style-type: none;
 }
 
 .proj-data{
   display: flex;
-  gap: 320px;
+  gap: 325px;
   /* justify-content: space-between; */
   /* flex-direction: column; */
 }
