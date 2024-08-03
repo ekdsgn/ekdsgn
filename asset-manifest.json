@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ekdsgn/static/css/main.76817c1a.css",
-    "main.js": "/ekdsgn/static/js/main.5eec199e.js",
+    "main.css": "/ekdsgn/static/css/main.df2b7e92.css",
+    "main.js": "/ekdsgn/static/js/main.a9f8c8d9.js",
     "static/js/453.357984f2.chunk.js": "/ekdsgn/static/js/453.357984f2.chunk.js",
     "static/media/ek.mp4": "/ekdsgn/static/media/ek.93c0bf178423b32b7189.mp4",
     "static/media/select-cover.webp": "/ekdsgn/static/media/select-cover.e76a22f066f8c89f04e8.webp",
@@ -9,12 +9,12 @@
     "static/media/mcmurrycover.webp": "/ekdsgn/static/media/mcmurrycover.88620f956a6949fd2490.webp",
     "static/media/New-EK-Logo.png": "/ekdsgn/static/media/New-EK-Logo.0a2d79a83198d18bbd0c.png",
     "index.html": "/ekdsgn/index.html",
-    "main.76817c1a.css.map": "/ekdsgn/static/css/main.76817c1a.css.map",
-    "main.5eec199e.js.map": "/ekdsgn/static/js/main.5eec199e.js.map",
+    "main.df2b7e92.css.map": "/ekdsgn/static/css/main.df2b7e92.css.map",
+    "main.a9f8c8d9.js.map": "/ekdsgn/static/js/main.a9f8c8d9.js.map",
     "453.357984f2.chunk.js.map": "/ekdsgn/static/js/453.357984f2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.76817c1a.css",
-    "static/js/main.5eec199e.js"
+    "static/css/main.df2b7e92.css",
+    "static/js/main.a9f8c8d9.js"
   ]
 }
