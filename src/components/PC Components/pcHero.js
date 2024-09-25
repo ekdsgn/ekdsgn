@@ -1,6 +1,4 @@
-import Header from '../components/header'
-import logo from '../assets/images/react-logo.png'
-import ek from '../assets/video/ek.mp4'
+import ek from '../../assets/video/ek.mp4'
 import { React, useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";

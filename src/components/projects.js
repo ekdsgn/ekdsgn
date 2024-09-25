@@ -13,7 +13,7 @@ const Project = ({ title, imgSrc }) => {
     <div className="proj-ctn">
       <h3>{title}</h3>
 
-      <div className="proj-carousel">
+      <div className="proj-carousel" key={imgSrc.join(",")}>
 
         <Carousel options={{ infinite: false }}>
         {imgSrc.map((src, index) => (

@@ -1,6 +1,6 @@
 import logo from '../assets/images/react-logo.png'
 import MobileHeader from './Mobile Components/mobileHeader';
-import PCHeader from '../PC Components/pcHeader';
+import PCHeader from './PC Components/pcHeader';
 
 
 

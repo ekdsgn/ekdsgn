@@ -83,7 +83,9 @@ const About = (props) => {
 
   // Function to handle option selection
   const handleOptionClick = (optionId) => {
+
     setSelectedOption(optionId);
+    gsap.from(".proj_sel", {opacity: 0, x: 500})
   };
 
   const titles = {
@@ -116,14 +118,16 @@ const About = (props) => {
           <div className="about-block-1">
             <div className="hero-text-1 grid-custom">
               <div className='grid-item'>
+
                 <div className='grid-item-div'>
                   <div className='d-item list_settings'>
                     <div className="about-menu">
+
                       <div className='ekLogo'>
                         <img src={ekLogo} alt='main logo of Ekemini'></img>
                       </div>
 
-                      <div className='about-info'>
+                      <div className="menu">
                         <div className='list_sel'>
                           <span id='option1' onClick={() => handleOptionClick('option1')}>Creative Director</span>
                           <span id='option2' onClick={() => handleOptionClick('option2')}>Multidisciplinary</span>
@@ -131,6 +135,16 @@ const About = (props) => {
                           <span id='option4'>Photographer</span>
                           <span id='option5'>Videographer</span>
                         </div>
+                      </div>
+
+                      <div className='about-info'>
+                        {/* <div className='list_sel'>
+                          <span id='option1' onClick={() => handleOptionClick('option1')}>Creative Director</span>
+                          <span id='option2' onClick={() => handleOptionClick('option2')}>Multidisciplinary</span>
+                          <span id='option3'>Graphic Designer</span>
+                          <span id='option4'>Photographer</span>
+                          <span id='option5'>Videographer</span>
+                        </div> */}
 
                         <div className='about-info-div'>
 
@@ -153,10 +167,12 @@ const About = (props) => {
 
                     </div>
                   </div>
+
                   <div className='d-item proj_sel'>
                     <Project title={titles[selectedOption]} imgSrc={images[selectedOption]} />
                   </div>
                 </div>
+
               </div>
             </div>
           </div>

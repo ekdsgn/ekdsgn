@@ -1,5 +1,5 @@
 import Header from "./header"
-import PCHero from "../PC Components/pcHero"
+import PCHero from "./PC Components/pcHero"
 import MobileHero from "./Mobile Components/mobileHero"
 
 const Hero = () => {
