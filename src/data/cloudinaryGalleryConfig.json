@@ -1,0 +1,19 @@
+{
+  "powerade": {
+    "folderPath": "ek/creativedir/powerade",
+    "labelPrefix": "Powerade gallery image",
+    "thumbnailPublicId": "_0011_poweradethumb_kgnjaf"
+  },
+  "bottegadesires": {
+    "folderPath": "ek/creativedir/bottegadesires",
+    "labelPrefix": "Bottega Desires gallery image"
+  },
+  "6athletics": {
+    "folderPath": "ek/creativedir/6athletics",
+    "labelPrefix": "6Athletics gallery image"
+  },
+  "77studios": {
+    "folderPath": "ek/creativedir/77studios",
+    "labelPrefix": "77studios gallery image"
+  }
+}

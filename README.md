@@ -39,6 +39,31 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
+## Media Providers (Cloudinary + Mux)
+
+This project now uses:
+
+- Cloudinary for responsive image delivery (`src/components/media/ResponsiveImage.js`)
+- Mux for video playback (`src/components/media/MuxPlayer.js`)
+
+Create a `.env` file in the project root with:
+
+```bash
+REACT_APP_CLOUDINARY_CLOUD_NAME=your_cloud_name
+
+# Optional Mux playback IDs for project videos
+REACT_APP_MUX_BOTTEGA_PLAYBACK_ID=your_mux_playback_id
+REACT_APP_MUX_SELECT_PLAYBACK_ID=your_mux_playback_id
+
+# Optional mp4 fallback URLs (if no playback ID is provided)
+REACT_APP_BOTTEGA_VIDEO_MP4=https://your-cdn/video.mp4
+REACT_APP_SELECT_VIDEO_MP4=https://your-cdn/video.mp4
+```
+
+Cloudinary public IDs are mapped in `src/data/imageData.js`.
+
+Project media definitions (including Mux video entries) are in `src/data/projects.js`.
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
